@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+:root {
+ --dark-cyan: hsl(158, 36%, 37%);
+ --cream: hsl(30, 38%, 92%);
+ --very-dark-blue: hsl(212, 21%, 14%);
+ --dark-grayish-blue: hsl(228, 12%, 48%);
+ --white: hsl(0, 0%, 100%);
+}
+
+img{
+    max-height: 100%;
+}
+
+
+body{
+    background-color: var(--cream) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 1px);
+}
+
+.container{
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+.img-mbl{
+    display: none;
+}
+
+
+.text-adv{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+}
+
+
+.txt, .li, button{
+    margin-bottom: 1rem;
+}
+
+.product, .desc, .style{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+    font-size: medium;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.price {
+    color:var(--dark-cyan);
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+}
+
+.style{
+    text-decoration: line-through;
+}
+
+button{
+    padding: 0.3rem 4rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--dark-cyan);
+    color: white;
+}
+
+button:hover{
+    background-color: var(--very-dark-blue);
+}
+
+@media (max-width: 650px) {
+
+    .img-dsk{
+        display: none;
+    }
+
+    .img-mbl{
+        display: flex;
+        width: 350px;
+        height: 300px;
+    }
+
+    .container{
+        height: 700px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
